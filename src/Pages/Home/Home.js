@@ -1,5 +1,6 @@
 import React from 'react' 
 import Banner from './Banner'
+import Footer from './Footer'
 import HowItWorks from './HowItWorks'
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
         <div>
             <Banner/>
             <HowItWorks/>
+            <Footer/>
         </div>
     )
 }
