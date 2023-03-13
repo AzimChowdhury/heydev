@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "image":"https://mylrap.org/mylrap/wp-content/uploads/2018/09/usnews.png"
+    },
+    {
+        "id":2,
+        "image":"https://mylrap.org/mylrap/wp-content/uploads/2018/09/cnnmoney.png"
+    },
+    {
+        "id":3,
+        "image":"https://mylrap.org/mylrap/wp-content/uploads/2018/09/wsj.png"
+    },
+    {
+        "id":4,
+        "image":"https://mylrap.org/mylrap/wp-content/uploads/2018/09/forbes.png"
+    },
+    {
+        "id":5,
+        "image":"https://mylrap.org/mylrap/wp-content/uploads/2018/09/fortune.png"
+    }
+]
