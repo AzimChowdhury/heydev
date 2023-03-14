@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import banner from '../../assets/banner.jpg';
 import './Banner.css';
 import Login from './Login';
-import shape from '../../assets/shape.png'  
+import shape from '../../assets/shape.png'
+import { UserContext } from '../../App';
 
 
 function Banner() {
+    const { user } = useContext(UserContext)
+
+
     return (
         <div>
 
@@ -25,7 +29,7 @@ function Banner() {
 
 
                 <div className='p-absolute-login'>
-                    <Login />
+                   { !user && <Login />}
                 </div>
             </div>
             <div className='mt-[-60px] z-50 relative'>

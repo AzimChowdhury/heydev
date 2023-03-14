@@ -9,13 +9,14 @@ import './Allusers.css'
 import { makeStyles } from '@material-ui/core';
 import {  useNavigate } from 'react-router-dom';
 import { UsersContext } from '../../App';
+import { VpnKey } from '@mui/icons-material';
 
 
 const useStyles = makeStyles({
     hover: {
         '&:hover': {
             cursor: 'pointer',
-            backgroundColor: "#d7e1f9"
+            backgroundColor: "#b4bac2", 
         }
     }
 });
@@ -33,16 +34,16 @@ function AllUsers() {
 
     return (
         <div>
-            <h1 style={{ fontFamily: 'Bebas Neue' }} className='text-4xl text-center my-5'>All users</h1>
+            <h1 style={{ fontFamily: 'Bebas Neue' }} className='text-4xl text-center my-5 text-[#692438] '>All users</h1>
 
             <TableContainer >
-                <Table sx={{ minWidth: 650, maxWidth: 900 }} className='mx-auto bg-gray-200 border border-gray-300' aria-label="simple table">
+                <Table  sx={{ minWidth: 650, maxWidth: 900 }} className='mx-auto bg-gray-300 border-2 border-[#692438]' aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell align='center'>Name</TableCell>
-                            <TableCell align="center">Email</TableCell>
-                            <TableCell align="center">Phone</TableCell>
-                            <TableCell align="center">Address</TableCell>
+                            <TableCell  style={{borderBottom:"1px solid #692438"}} align='center'>Name</TableCell>
+                            <TableCell style={{borderBottom:"1px solid #692438"}} align="center">Email</TableCell>
+                            <TableCell style={{borderBottom:"1px solid #692438"}} align="center">Phone</TableCell>
+                            <TableCell style={{borderBottom:"1px solid #692438"}} align="center">Address</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -51,10 +52,10 @@ function AllUsers() {
                                     className={classes.hover}
                                     key={user?.name}
                                 >
-                                    <TableCell align="center">{user?.name}</TableCell>
-                                    <TableCell align="center">{user?.email}</TableCell>
-                                    <TableCell align="center">{user?.phone}</TableCell>
-                                    <TableCell align="center">{user?.address?.street}, {user?.address?.city}</TableCell>
+                                    <TableCell style={{borderBottom:"1px solid #692438"}}  align="center">{user?.name}</TableCell>
+                                    <TableCell style={{borderBottom:"1px solid #692438"}} align="center">{user?.email}</TableCell>
+                                    <TableCell style={{borderBottom:"1px solid #692438"}} align="center">{user?.phone}</TableCell>
+                                    <TableCell style={{borderBottom:"1px solid #692438"}} align="center">{user?.address?.street}, {user?.address?.city}</TableCell>
                                 </TableRow> 
                         ))}
                     </TableBody>

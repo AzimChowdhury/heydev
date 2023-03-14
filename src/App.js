@@ -9,13 +9,15 @@ import { createContext, useState, useEffect } from 'react';
 
 
 export const UsersContext = createContext();
+export const UserContext = createContext();
 
 
 
 function App() {
 
   const [allUsers, setAllUsers] = useState([]);
-
+  const [user, setUser] = useState(null);
+  const userInfo = {user,setUser}
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(res => res.json())
@@ -23,17 +25,20 @@ function App() {
   }, []);
 
 
+console.log(user)
   return (
     <div>
       <UsersContext.Provider value={allUsers}>
-        <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/allusers' element={<AllUsers />} />
-          <Route path='/user/:id' element={<UserDetails />} />
-        </Routes>
+        <UserContext.Provider value={userInfo}>
+          <Header />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/allusers' element={<AllUsers />} />
+            <Route path='/user/:id' element={<UserDetails />} />
+          </Routes>
 
-        <Footer />
+          <Footer />
+        </UserContext.Provider>
       </UsersContext.Provider>
     </div>
   );
