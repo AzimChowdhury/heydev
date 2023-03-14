@@ -1,14 +1,12 @@
 import React from 'react' 
-import Banner from './Banner'
-import Footer from './Footer'
+import Banner from './Banner' 
 import HowItWorks from './HowItWorks'
 
 function Home() {
     return (
         <div>
             <Banner/>
-            <HowItWorks/>
-            <Footer/>
+            <HowItWorks/> 
         </div>
     )
 }
