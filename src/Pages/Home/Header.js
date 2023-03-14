@@ -19,14 +19,14 @@ function Header() {
     return (
         <div>
             <div className='flex items-center'>
-                <Link className='w-36 mx-auto py-2' to='/'> <img src={Logo} alt="" /></Link>
+                <Link className='w-36 mx-auto  py-2' to='/'> <img src={Logo} alt="" /></Link>
                 
                 {
                     !user ? "" :
                         <div className='flex'>
-                            <Link to='/allusers'> <p style={{ fontFamily: 'Bebas Neue' }} className='text-xl mr-12 text-gray-600'>All Users</p></Link>
-                            <p style={{ fontFamily: 'Bebas Neue' }} className='text-xl mr-12 text-gray-600'>{user?.name}</p>
-                            <p onClick={() => handleLogout()} style={{ fontFamily: 'Bebas Neue' }} className='text-xl mr-12 text-gray-600 cursor-pointer'>Logout</p>
+                            <Link to='/allusers'> <p style={{ fontFamily: 'Bebas Neue' }} className='lg:text-xl lg:mr-12 mr-4 text-gray-600'>All Users</p></Link>
+                            <p style={{ fontFamily: 'Bebas Neue' }} className='lg:text-xl lg:mr-12 mr-4 text-gray-600'>{user?.name}</p>
+                            <p onClick={() => handleLogout()} style={{ fontFamily: 'Bebas Neue' }} className='lg:text-xl lg:mr-12 mr-4 text-gray-600 cursor-pointer'>Logout</p>
                         </div>
                 }
             </div>

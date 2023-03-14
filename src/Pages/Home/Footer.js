@@ -15,20 +15,20 @@ function Footer() {
     return (
         <div className='w-9/12 mx-auto mt-24'>
             <p className='text-center mb-3 text-[#5A5A5B] text-xl font-semibold'>As Featured In</p>
-            <div className='flex justify-between'>
+            <div className=' lg:flex   justify-between '>
                 {
                     companies?.map(company=>
-                        <img src={company?.image} alt=""/>
+                        <img className='lg:w-2/12 sm:6/12 mx-auto' src={company?.image} alt=""/>
                         )
                 }
             </div>
-            <div className='flex mt-10'>
+            <div className='lg:flex mt-10'>
                 <div>
                     <h3 className='h3'>About Ardeo Educational Solutions</h3>
                     <p className='footerP'>Ardeo partners with collages across the U.S. to help <br/> students overcomes the burden of student loans.</p>
                 </div>
 
-                <div className='ml-20'>
+                <div className='lg:ml-20  lg:mt-0 mt-7'>
                     <h3 className='h3'>Contact Us</h3>
                     <p  className='footerP' >P.O. Box 1476</p>
                     <p  className='footerP' >Bloomington, IN 47402</p>

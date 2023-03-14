@@ -5,7 +5,7 @@ import './howitworks.css';
 
 function HowItWorks() {
     return (
-        <div className='w-3/6 mx-auto mt-7'>
+        <div className='lg:w-3/6 w-11/12 mx-auto mt-7'>
             <h1 className="h1">How It Works</h1>
             <p className="p"> Accept your LRAP Award and enroll at Seattle Pacific University in the 2023 - 2024 academic year. After graduating with a bachelor's degree, if you are earning less than $46,000, we will reimburse you for some or all of your covered student loan payments.</p>
             <h1 className="h1">Covered Loans</h1>

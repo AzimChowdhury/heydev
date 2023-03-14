@@ -15,11 +15,11 @@ function UserDetails() {
 
 
     return (
-        <div className='w-4/6 mx-auto mt-20 bg-gray-300 relative p-7 border-2 border-[#692438] rounded-lg'>
+        <div className='lg:w-4/6 w-11/12 mx-auto mt-20 bg-gray-300 relative p-7 border-2 border-[#692438] rounded-lg'>
             <p onClick={()=>navigate(-1)} className='cursor-pointer absolute top-5 left-5 text-xl bg-[#692438] text-white py-2 px-4 border border-white rounded-lg'><ArrowBackIcon /> Back</p>
-            <p style={{ fontFamily: 'Bebas Neue' }} className='text-[#692438] text-center text-4xl'>User Details</p>
+            <p style={{ fontFamily: 'Bebas Neue' }} className='text-[#692438] lg:text-center text-right text-4xl'>User Details</p>
 
-            <div className='flex  justify-around'>
+            <div className='lg:flex  justify-around'>
                 <div className='flex justify-around  text-lg py-5'>
                     <div className='mr-2  '>
                         <p className='py-1'>

@@ -9,8 +9,15 @@
     left: 8%;
 }
 
-.p-absolute-login {
+@media only screen and (max-width:640px) {
+  .p-absolute {
     position: absolute;
+    top: 8%;
+    left: 8%;
+}
+}
+
+.p-absolute-login { 
     top: 10%;
     right: 8%;
 }

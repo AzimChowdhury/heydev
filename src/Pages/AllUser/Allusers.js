@@ -37,7 +37,7 @@ function AllUsers() {
             <h1 style={{ fontFamily: 'Bebas Neue' }} className='text-4xl text-center my-5 text-[#692438] '>All users</h1>
 
             <TableContainer >
-                <Table  sx={{ minWidth: 650, maxWidth: 900 }} className='mx-auto bg-gray-300 border-2 border-[#692438]' aria-label="simple table">
+                <Table  sx={{ minWidth: 650, maxWidth: 900 }} className='lg:mx-auto mx-5 bg-gray-300 border-2 border-[#692438]' aria-label="simple table">
                     <TableHead>
                         <TableRow>
                             <TableCell  style={{borderBottom:"1px solid #692438"}} align='center'>Name</TableCell>
